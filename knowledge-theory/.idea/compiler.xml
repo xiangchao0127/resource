@@ -9,7 +9,15 @@
         <module name="knowledge-common" />
         <module name="knowledge-dictionary" />
         <module name="knowledge-permission" />
+        <module name="register-center" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="knowledge-common" target="1.8" />
+      <module name="knowledge-dictionary" target="1.8" />
+      <module name="knowledge-permission" target="1.8" />
+      <module name="knowledge-theory" target="1.8" />
+      <module name="register-center" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

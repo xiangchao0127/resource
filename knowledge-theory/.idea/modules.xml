@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/knowledge-common/knowledge-common.iml" filepath="$PROJECT_DIR$/knowledge-common/knowledge-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knowledge-dictionary/knowledge-dictionary.iml" filepath="$PROJECT_DIR$/knowledge-dictionary/knowledge-dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/knowledge-permission/knowledge-permission.iml" filepath="$PROJECT_DIR$/knowledge-permission/knowledge-permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/knowledge-theory.iml" filepath="$PROJECT_DIR$/.idea/knowledge-theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/register-center/register-center.iml" filepath="$PROJECT_DIR$/register-center/register-center.iml" />
+    </modules>
+  </component>
+</project>
