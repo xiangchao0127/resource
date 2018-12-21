@@ -20,25 +20,24 @@ def base64ify(bytes_or_str):
 
 
 class ProxyMiddleware(object):
-    def process_start_requests(self, requests, spider):
+    def process_request(self, request, spider):
         # 代理服务器
-        proxyHost = "b5.t.16yun.cn"
-        proxyPort = "6460"
+        proxyHost = "p5.t.16yun.cn"
+        proxyPort = "6445"
 
         # 代理隧道验证信息
-        proxyUser = "16YAVBJE"
-        proxyPass = "430566"
-        for request in requests:
-            request.meta['proxy'] = "http://{0}:{1}".format(proxyHost, proxyPort)
+        proxyUser = "16LLJHES"
+        proxyPass = "546239"
 
-            # 添加验证头
-            encoded_user_pass = base64ify(proxyUser + ":" + proxyPass)
-            request.headers['Proxy-Authorization'] = 'Basic ' + encoded_user_pass
+        request.meta['proxy'] = "http://{0}:{1}".format(proxyHost, proxyPort)
 
-            # 设置IP切换头(根据需求)
-            tunnel = random.randint(1, 10000)
-            request.headers['Proxy-Tunnel'] = str(tunnel)
-            yield request
+        # 添加验证头
+        encoded_user_pass = base64ify(proxyUser + ":" + proxyPass)
+        request.headers['Proxy-Authorization'] = 'Basic ' + encoded_user_pass
+
+        # 设置IP切换头(根据需求)
+        tunnel = random.randint(1, 10000)
+        request.headers['Proxy-Tunnel'] = str(tunnel)
 
 class RandomUserAgent(object):
         """Randomly rotate user agents based on a list of predefined ones"""

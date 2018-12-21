@@ -19,8 +19,8 @@ class MilitaryScrapyPipeline(object):
             "_index": "en-us",
             "_type": "data",
             "_source": {
-                "domain": 148,
-                "sub_domain": 150,
+                "domain": 200,
+                "sub_domain": 260,
                 "chinese": item['chinese'],
                 "english": item['english']
             }

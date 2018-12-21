@@ -10,7 +10,7 @@ class MilitarySpiderSpider(scrapy.Spider):
     name = 'military_spider'
     allowed_domains = ['dict.biomart.cn']
 
-    with open('D:\military\military_scrapy\military_scrapy\spiders\words', 'r') as f1:
+    with open('D:\military\military_scrapy\military_scrapy\spiders\words1', 'r') as f1:
         results = f1.readlines()
     # start_urls = ['http://dict.biomart.cn/sentence.htm?wd=%E5%BF%83%E8%84%8F&p=1']
     urls = []
